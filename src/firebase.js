@@ -1,6 +1,4 @@
 import * as firebase from "firebase/app";
-import "firebase/firestore";
-import "firebase/storage";
 import "firebase/auth";
 
 // Basic firebase configuration linking web application to database - see firebase documentation
@@ -24,6 +22,5 @@ provider.setCustomParameters({
   login_hint: "user@example.com"
 });
 // Exporting connection to database as a variable
-export const firestore = firebase.firestore();
 
 export default firebase;

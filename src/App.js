@@ -18,7 +18,7 @@ class App extends Component {
         // This gives you a Google Access Token. You can use it to access the Google API.
         var token = result.credential.accessToken;
         // The signed-in user info.
-        var user = result.user;
+        const user = result.user;
         // ...
         this.setState({
           user
@@ -50,10 +50,5 @@ class App extends Component {
       </div>
     );
   }
-
-  handleSubmit = event => {
-    this.props.authenticateUser(this.state.email, this.state.pass);
-    event.preventDefault();
-  };
 }
 export default App;
